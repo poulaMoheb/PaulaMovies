@@ -1,0 +1,324 @@
+:root {
+    --red: #E50914;
+    --white: #ffffff;
+    --grey: #7b6969;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+/* --------------------------------NAVBAR------------------------------------------- */
+.NavBar {
+    border-bottom: 4px solid var(--grey);
+    width: 100%;
+    margin: 0;
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.NavLink {
+    background-color: none;
+}
+
+.nav-link {
+    color: var(--white);
+}
+
+.NavActive {
+    color: var(--red);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+    background-color: #000000 !important;
+}
+
+.poula {
+    cursor: default;
+    color: var(--grey);
+    font-weight: 600;
+}
+
+.movies {
+    cursor: default;
+    font-weight: 900;
+    color: var(--red);
+}
+
+.NavButton {
+    background: transparent;
+    color: var(--white);
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    background-color: rgba(95, 89, 89, 0.806);
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.searchbtn {
+    width: 40px;
+    height: 40px;
+    border: 2px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff63;
+}
+
+.Search {
+    background: var(--red);
+    height: -moz-fit-content;
+    height: -webkit-fill-available;
+    color: #000000;
+    font-size: larger;
+    margin-bottom: 5px;
+    margin-right: 0;
+    border-radius: 0;
+    font-weight: 900;
+}
+
+.Search::placeholder {
+    color: black;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* --------------------------------------------------------Container-------------------------------------------------------- */
+.container {
+    background-color: #040303;
+    border-right-color: rgb(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 80px -25px rgb(53 45 45 / 50%);
+}
+
+.coloumn1 {
+    border: rgba(0, 0, 0, 0.1);
+}
+
+
+.carousel-image {
+    max-height: 450px;
+}
+
+/* ----------------------------------------------card ------------------------------------------ */
+
+.category {
+    cursor: default;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.card-main {
+    padding: 0;
+    border: 0;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--grey);
+    object-fit: fill;
+    margin-left: 1px;
+    transition: 1s;
+
+
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    right: 0;
+    /* transition: 0.5s; */
+    background: #7b69694c;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    color: white;
+    padding: 30px;
+}
+
+
+
+.card-main:hover .card-body {
+    top: 0;
+    /* transform: scale(1.1); */
+}
+
+.card-main:hover {
+    transform: rotatey(360deg);
+}
+
+.card-name {
+    font-weight: 500;
+    line-height: 35px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.card-info {
+    line-height: 17px;
+    font-size: 16px;
+}
+
+.carousel-caption .category {
+    top: 0;
+    bottom: auto;
+}
+
+.div-side-nav {
+    width: min-content;
+}
+
+.searchst {
+    text-align: end;
+}
+
+.genre {
+    color: var(--white);
+    cursor: pointer;
+    background: none !important;
+}
+
+.genre:hover {
+    color: var(--grey)
+}
+
+.genre:focus {
+    background-color: var(--grey);
+}
+
+.active {
+    background-color: var(--grey) !important;
+    font-weight: 700;
+    color: #a01313;
+}
+
+/* --------------------------------------------------------Single Movie Page----------------------------------------------------- */
+.cover-img {
+    width: 100%;
+    height: 391px;
+    opacity: 0.2;
+    background: linear-gradient(#000000);
+}
+
+.movie-img {
+    border-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 1s;
+}
+
+.movie-img:hover {
+    box-shadow: 0px 0px 80px -25px rgb(255 255 255 / 50%);
+}
+
+.MovieTitle {
+    font-weight: 700;
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    cursor: default;
+}
+
+.genres {
+    color: rgb(255 255 255 / 50%);
+    cursor: pointer;
+}
+
+.genres:hover {
+
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.date {
+    font-size: large;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: default;
+}
+
+.overView {
+    cursor: default;
+    color: #ffffff;
+    font-size: small;
+}
+
+/* -------------------------------view search -------------------------------- */
+
+.searchName {
+    font-weight: 800;
+    color: var(--white);
+}
+
+.noResults {
+    font-size: xxx-large;
+    font-weight: 900;
+    color: var(--white);
+
+}
+
+/* --------------------------------------Contact us ---------------------------------- */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+input[type="text"]:focus+label,
+input[type="date"]:focus+label,
+input[type="tel"]:focus+label,
+textarea:focus+label {
+    top: -20px;
+    font-size: 12px;
+    color: #4CAF50;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
